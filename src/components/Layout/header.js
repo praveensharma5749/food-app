@@ -1,13 +1,18 @@
 import { Fragment } from 'react';
-import classes from './header.module.css';
-const header = props =>{
-    return <Fragment>
-        <header className={classes.header}>
-            <h1>ReactMeals</h1>
-            <button>Cart</button>
-        </header>
-       
+
+import HeaderCartButton from './HeaderCartButton';
+import classes from './Header.module.css';
+
+const Header = (props) => {
+  return (
+    <Fragment>
+      <header className={classes.header}>
+        <h1>ReactMeals</h1>
+        <HeaderCartButton />
+      </header>
+      
     </Fragment>
+  );
 };
 
-export default header;
+export default Header;
